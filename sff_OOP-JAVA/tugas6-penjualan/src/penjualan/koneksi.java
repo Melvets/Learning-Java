@@ -9,9 +9,9 @@ public class koneksi {
     //fungsi/method connection
         public static Connection koneksiDB() throws SQLException {
             try {
-                String DB ="jdbc:mysql://localhost/sff_java-penjualan";
-                String user="admin";
-                String pass="admin123";
+                String DB ="jdbc:mysql://localhost/pbo_java-penjualan";
+                String user="root";
+                String pass="";
                 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
                 KoneksiDatabase = (Connection) DriverManager.getConnection(DB,user,pass);
             } catch (Exception e) {
